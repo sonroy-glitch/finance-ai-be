@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.analyzer = analyzer;
 const generative_ai_1 = require("@google/generative-ai");
 const genAI = new generative_ai_1.GoogleGenerativeAI(process.env.AI_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 const core_1 = require("@tavily/core");
 const client = (0, core_1.tavily)({ apiKey: process.env.TAVILY_KEY });
 const ioredis_1 = __importDefault(require("ioredis"));
