@@ -18,7 +18,7 @@ const { tavily } = require("@tavily/core");
 
 
 const genAI = new GoogleGenerativeAI(process.env.AI_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 const client = tavily({ apiKey: process.env.TAVILY_KEY });
 const redis = new ioredis_1.default(process.env.REDIS_KEY);
 
